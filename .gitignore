@@ -1,0 +1,19 @@
+# Environment & Secrets
+.env
+*.env
+
+# Virtual Environments
+.venv/
+env/
+venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# Local Databases & Embeddings
+chroma_db/
+*.sqlite3
+
+# OS Files
+.DS_Store
