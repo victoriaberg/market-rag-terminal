@@ -7,13 +7,26 @@
 env/
 venv/
 
-# Python Cache
+# Python Cache & Build Artifacts
 __pycache__/
 *.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
 
-# Local Databases & Embeddings
+# Local Databases, Embeddings & Data
 chroma_db/
 *.sqlite3
+*.parquet
+*.csv
 
-# OS Files
+# Logs & Testing
+*.log
+.pytest_cache/
+.coverage
+
+# IDEs & OS Files
+.vscode/
 .DS_Store
