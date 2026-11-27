@@ -105,7 +105,7 @@ python -m src.main
 ## Roadmap
 
 - [x] Ticker & news polling ingestion (`yfinance`)
-- [ ] ChromaDB vector indexing with ticker metadata
+- [x] ChromaDB vector indexing with ticker metadata
 - [ ] Time-decay relevance reranking
 - [ ] LLM financial synthesis prompt
 - [ ] Interactive Rich terminal layout
