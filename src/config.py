@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
-
+    # LLM and embedding settings
     llm_base_url: str = "https://models.github.ai/inference"
     llm_api_key: str = ""  # Defaults to empty string if not provided in .env
     llm_model: str = "gpt-4o-mini"
@@ -21,6 +21,9 @@ class Settings(BaseSettings):
     }
     poll_interval_seconds: int = 180
     news_per_ticker: int = 10
+    # Scoring knobs for ranking articles
+    decay_half_life_hours: float = 24.0
+    recency_weight: float = 0.3
 
-
+# Create a single global settings instance that can be imported and used throughout the application.
 settings = Settings()
