@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     llm_api_key: str = ""  # Defaults to empty string if not provided in .env
     llm_model: str = "gpt-4o-mini"
     chroma_db_dir: str = "./chroma_db"
+    chroma_collection_name: str = "market_news"
+    embedding_model: str = "all-MiniLM-L6-v2"
     default_tickers: list[str] = ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN"]
     # Company names used to check that a news article is really about a ticker.
     ticker_aliases: dict[str, list[str]] = {
