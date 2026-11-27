@@ -106,6 +106,6 @@ python -m src.main
 
 - [x] Ticker & news polling ingestion (`yfinance`)
 - [x] ChromaDB vector indexing with ticker metadata
-- [ ] Time-decay relevance reranking
+- [x] Time-decay relevance reranking
 - [ ] LLM financial synthesis prompt
 - [ ] Interactive Rich terminal layout
